@@ -15,9 +15,9 @@ services:
     volumes:
       - npm_data:/data
     expose:
-      - 81
-      - 80
-      - 443
+      - 7081
+      - 7080
+      - 7443
     depends_on:
       - db
     healthcheck:
@@ -34,9 +34,9 @@ services:
     volumes:
       - npm_data:/data
     expose:
-      - 81
-      - 80
-      - 443
+      - 7081
+      - 7080
+      - 7443
     healthcheck:
       test: ["CMD", "/bin/check-health"]
       interval: 10s
